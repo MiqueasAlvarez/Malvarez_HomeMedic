@@ -975,6 +975,7 @@ header {
   gap: var(--spacing-xsmall);
   justify-content: center;
   flex-wrap: wrap;                    /* Esto hace que cuando las imagenes ya no entren en la pantalla, las mismas bajen. (el wrap impide que el hijo supere al padre) */
+  
 }
 .box{
   display: flex;
@@ -1013,20 +1014,22 @@ header {
   font-size: var(--text-base);
   color: var(--text-color);
 }
+
+
+
 .box__img{
   display: flex;
 
   
   flex: 1 1;
   
+  
   max-width: var(--conteiner-imagesize-width);
   max-height: var(--conteiner-imagesize-height);
+  
   transition: all 1s;
 }
-.box__img{
-  border-radius: 10%;
 
-}
 
 
 .box__img:hover{
@@ -1091,7 +1094,7 @@ header {
   flex-direction: column;
   
   align-items: center;
-  border: #ffffff solid 1px;
+  border: none;
 }
 .box__info__productos{
   display: flex;
@@ -1121,6 +1124,7 @@ header {
   width: 500px;
   height: 400px;
   cursor: pointer;
+  border-radius: 10%;
   
   transition: all 1s;
   
