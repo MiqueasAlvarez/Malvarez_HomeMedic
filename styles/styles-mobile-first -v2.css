@@ -881,7 +881,32 @@ header {
 
   }
   .header__img{
-    width: 90px;                                       /*Con este maximo de pixel piso lo que puse anteriormente del 100% */
+    border-radius: 10%;
+    width: 90px;                                    /*Con este maximo de pixel piso lo que puse anteriormente del 100% */
+    animation-name:animacion__header__img;
+
+    animation-duration: 15s;
+    animation-iteration-count: 2;
+  }
+
+  @keyframes animacion__header__img {
+    0%{
+    }
+    25%{
+      transform: translateX(300px);
+    }
+    50%{
+      transform: rotate(360deg);
+    }
+    75%{
+      border-radius: 100%;
+    }
+    100%{
+
+    }
+
+
+    
   }
 
   .header__title{
@@ -959,8 +984,12 @@ header {
    
   align-items: center;
   
+  cursor: pointer;
 
+ 
 }
+
+
 .box__info{
   display: flex;
   flex-direction: column;
@@ -991,7 +1020,20 @@ header {
   
   max-width: var(--conteiner-imagesize-width);
   max-height: var(--conteiner-imagesize-height);
+  transition: all 1s;
 }
+
+
+.box__img:hover{
+ 
+	transform: scale(1.1);
+}
+
+
+
+
+
+
 
 /*Clases html servicios*/
 .cards__servicios p{
@@ -1078,12 +1120,17 @@ header {
   display: flex;
   width: 500px;
   height: 400px;
-
-
-  /* flex: 1 1 clamp(100px, 30%, 600px) ; */
+  cursor: pointer;
   
-  /* max-width: var(--conteiner-imagesize-width);
-  max-height: var(--conteiner-imagesize-height); */
+  transition: all 1s;
+  
+ 
+
+}
+
+.box__img__productos img:hover{
+ 
+	transform: scale(1.1);
 }
 
 
@@ -1159,11 +1206,6 @@ header {
 
 
 
-
-
-
-
-
 /*fin area productos*/
 
 /*barra de navegacion lateral*/
@@ -1206,6 +1248,7 @@ header {
 .box__nav:hover{
 
   border-color: var(--text-base);
+  
 }
 
 
