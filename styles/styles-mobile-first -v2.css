@@ -1015,6 +1015,7 @@ header {
 }
 .box__img{
   display: flex;
+
   
   flex: 1 1;
   
@@ -1022,17 +1023,16 @@ header {
   max-height: var(--conteiner-imagesize-height);
   transition: all 1s;
 }
+.box__img{
+  border-radius: 10%;
+
+}
 
 
 .box__img:hover{
  
 	transform: scale(1.1);
 }
-
-
-
-
-
 
 
 /*Clases html servicios*/
