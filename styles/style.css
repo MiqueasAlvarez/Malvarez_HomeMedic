@@ -2,7 +2,12 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap'); /*fuentes de google*/
 
-
-#card_principal{
-  max-height: 60px;
+@media screen and (min-width: 1000px) {
+#nav__display{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+  
+}
 }
