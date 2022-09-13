@@ -3,119 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../styles/styles-mobile-first -v2.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+      <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <title>HomeMedic</title>
 </head>
 
-<body class="grilla__contacto">
+<!-- BARRA DE NAVEGACION + CABECERA -->
 
-      <!-- Inicio Header -->
-    <header class="cabecera">
+<!-- Coloco el container-fluid como clase en 
+  el body, si no se quiere aplicar en el body
+  puede aplicarse en un section debajo del body
+  y que ese section englobe al resto del codigo -->
 
-        <picture class="header__logo">
-            <img class="header__img" src="../images/Logo_Medic.jpg" alt="Logo">
-        </picture>
+<body class="container-fluid">
 
-        <p class="header__title">HomeMedic</p>
-
-        <nav class="menu__nav">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Inicio</a>               <!--  sino utilizo para la direccion del archivo que esta en el mismo nivel que el index, el "./" , cuando lo suba a un servidor no lo va a tonar  -->
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/servicios.html">Servicios</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/Productos.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="../pages/FAQ.html">FAQ</a>
-                </li>
+    <!-- INICIO FILA CON LA CLASE row -->
+  
+    <!-- CABECERA -->
+  
+  
+    <section class="row">
+      <!-- INICIO COLUMNA CON LA CLASE col -->
+      <section class="col-12">
+        <!-- HEADER -->
+        <header class="text-bg-white p-3 text-center">
+          <img src="../images/Logo_Medic.jpg" alt="Logo">
+          <h1>HomeMedic</h1>
+        </header>
+        <!-- FIN HEADER -->
+      </section>
+      <!-- FIN COLUMNA -->
+    </section>
+    <!-- FIN DE FILA -->
+  
+    <!-- INICIO DE FILA boton nav-->
+    
+    <section class="row">
+      <!-- INICIO DE COLUMNA -->
+      <section class="col">
+        <!-- INICIO DE NAV -->
+        <nav class="navbar navbar-dark bg-dark ">
+  
+          <section class="col-1 navbar navbar-expand-bg navbar-dark bg-dark p-4">
+              <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+              <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+              <ul class="navbar-nav ">
+                  <li class="nav-item">
+                      <article class="nav-link text-center">
+                          <img src="../images/logueo.jpg" width="55px" height="55px" >
+                          <p>Iniciar Sesión</p>
+                      </article>
+                  </li>
+                  <li class="nav-item">
+                      <article class="nav-link text-center">
+                          <img src="../images/registro.jpg" width="55px" height="55px">
+                          <p>Registrarse</p>
+                      </article>
+                  </li>
+                  <li class="nav-item">
+                      <article class="nav-link text-center">
+                          <img src="../images/atencion_urgencia.jpg" width="55px" height="55px" >
+                          <p>Urgencia Medica</p>
+                      </article>
+                  </li>
+                  <li class="nav-item">
+                      <article class="nav-link text-center">
+                          <img src="../images/medico_virtual.jpg" width="55px" height="55px" >
+                          <p>Turno antencion medica</p>
+                      </article>
+                  </li>
+                  <li class="nav-item">
+                      <article class="nav-link text-center">
+                          <img src="../images/hospital_encasa.jpg" width="55px" height="55px" >
+                          <p>Asistencia en casa</p>
+                      </article>
+                  </li>
+              </div>
+  
+          </section>
+  
+          <section class="col-5" >
+            <ul class="navbar-nav  mb-3 mb-lg-0" id="nav__display-producto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./FAQ.html">FAQ</a>
+              </li>
             </ul>
-        </nav>
-
-    </header>
-    <!-- Fin Header -->
-
-    <!-- MAIN -->
-    <section class="main__productos">
-
-      <article class="box__productos__titulos">
-        <h2>Te presentamos nuestros Productos</h2>
-      </article>
-
-      <section class="container__productos">
-        <section class="cards__productos">
-
             
-            <article class="box__productos">
-                <picture class="box__img__productos">
-                  <img src="../images/scanwacht.jpg" alt="">
-                </picture>
-                <div class="box__info__productos">
-                    <h2 class="box__title__productos">Scanwacht</h2>
-                    <h3 class="box__subtitle__productos">Solicite ayuda inmediata cuando la situación lo requiera</h3>
-                    <p class="box__text__productos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis error a molestias aliquam quasi sed recusandae voluptates dolor, placeat ipsa, accusantium commodi deserunt doloribus suscipit doloremque fuga, adipisci ad. Atque.</p>
+          </section>
+        </nav>
+        <!-- FIN DE NAV -->
+      </section>
+      <!-- FIN DE COLUMNA -->
+    </section>
+
+<!-- BARRA DE NAVEGACION + CABECERA -->
+
+
+<!-- MAIN -->
+    <!-- FILAS -->
+    <section class="row p-15" id="carousel__id_main">
+      <!-- COLUMNAS -->
+      <section class="col-12" id="carousel__id">
+
+          <h2>Te presentamos nuestros Productos</h2>
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../images/scanwacht.jpg" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Scanwacht</h5>
+                  <p>Motinotero continueo de su ritmo cardiaco y presion arterial.</p>
                 </div>
-            </article>
-            <article class="box__productos">
-                <picture class="box__img__productos">
-                    <img src="../images/smart_skin.jpg" alt="">
-                </picture>
-                <div class="box__info__productos">
-                    <h2 class="box__title__productos">Ropa inteligente</h2>
-                    <h3 class="box__subtitle__productos">Solicite atención medica para consultas medicas en diversas especialidades</h3>
-                    <p class="box__text__productos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique magni totam enim, ab neque mollitia facilis deserunt quasi harum voluptas tenetur. Quidem velit accusamus numquam dolore, tempore est minus quo?</p>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../images/smart_skin.jpg" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ropa inteligente</h5>
+                  <p>Reciba monitoreo continuo de su estado de salud de manera remota.</p>
                 </div>
-            </article>
-            <article class="box__productos">
-                <picture class="box__img__productos">
-                    <img src="../images/smartWelt.jpg" alt="">
-                </picture>
-                <div class="box__info__productos">
-                    <h2 class="box__title__productos">Cinturon inteligente</h2>
-                    <h3 class="box__subtitle__productos">Reciba atención medica con monitoreo continuo desde su casa conectado a internet</h3>
-                    <p class="box__text__productos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore id asperiores repudiandae quidem iusto minus distinctio facilis accusantium aut incidunt laboriosam, neque, libero blanditiis dolor voluptatum laborum. Eum, mollitia dolorum.
-                    </p>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/smartWelt.jpg" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cinturon inteligente</h5>
+                  <p>Sistema de protección ante eventuales caidas orientados a personas mayores o personas con discapacidad</p>
                 </div>
-            </article>
-        </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <p class="box__text__productos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore id asperiores repudiandae quidem iusto minus distinctio facilis accusantium aut incidunt laboriosam, neque, libero blanditiis dolor voluptatum laborum. Eum, mollitia dolorum.
       </section>
     </section>
 
+
     <!-- FIN MAIN -->
+
+
+
+
+
+
+
+
+
+
+
 
  <!-- Comienzo footer -->
 
     <footer class="footer">
-          
-      <div  class="footer__img">
-        <img src="./images/Logo_Medic.jpg" alt="">
-        <h3>HomeMedic</h3>
-        <h3>Contacto</h3>
+        <!-- Comienzo footer -->
 
-        <p> Av. Roca 897, Puerto Madryn, Chubut, Argentina.</p>
+    <footer class="row p-3">
+      <section class="text-bg-dark p-3">
+    
+          <div class="text-center" >
+          <img src="./images/Logo_Medic.jpg" alt="">
+          <h3>HomeMedic</h3>
+          <h3>Contacto</h3>
 
-        <a href="consultas@homedic.com" class="footer__email">Envienos un email</a>
+          <p> Av. Roca 897, Puerto Madryn, Chubut, Argentina.</p>
 
-      </div>
+          <a class="text-white" href="consultas@homedic.com" >Envienos un email</a>
 
+          </div>
+      </section>
 
-      <div class="footer__div1-a">
-        <!-- <h3>Contacto</h3> -->
-        <!-- <p> Av. Roca 897, Puerto Madryn, Chubut, Argentina.</p> -->
-        <!-- <a href="consultas@homedic.com" class="footer__email">Envienos un email</a> -->
-      </div>
+      <div class="text-center"> 2022. Home Medical Care. All rights reserved.</div>
+    
+   
+  </footer>
 
-      <div class="footer__derechos"> 2022. Home Medical Care. All rights reserved.</div>
-    </footer>
-
-  </body>
+</body>
   
 <!-- cierre de footer --> 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </html>

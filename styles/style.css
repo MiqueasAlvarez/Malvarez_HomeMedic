@@ -2,6 +2,68 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap'); /*fuentes de google*/
 
+
+:root {
+  /* Colors */
+  --primary: #120D31;
+  --secondary: #FF5376;
+  --alternative: #302F4D;
+  --text-color: #2B2B2B;
+  --text-navcolor:#0241b8;
+  --cabecera-backgroundcolor:#0241b8;
+  --cabecera-mobile-backgroundcolor:#0241b8;
+  --cabecera-mobile-nav-backgroundcolor:#76777a;
+  --footer-mobile-backgroundcolor:#c8c4c4;
+  --nav-backgroundcolor:#ffffff;
+  --nav-mobile-backgroundcolor:#c8c4c4;
+  --footer-backgroundcolor:#f4f1f1;
+  --footer-topbordercolor:#ffffff;
+
+
+  /* Spacings */
+  --spacing-xlarge:12rem;
+  --spacing-xxlarge:50rem;
+  --spacing-large: 6rem;
+  --spacing-medium: 2.4rem;
+  --spacing-small: 2rem;
+  --spacing-xsmall: 1rem;
+  --spacing-xxsmall:0.2rem;
+
+  /* Font-family */
+  --font-principal: 'Barlow', sans-serif;
+  --font-title: 'Roboto Slab', serif;
+
+  /* Font-Sizes */
+  --text-title:4em;
+  --text-large: 5.2em;
+  --text-medium: 2.2em;
+  --text-base: 1.6em;
+  --text-small: 1.4em;
+  --text-navtext:1.5em;
+  --footer-textsize:1.5em;
+
+  /*objets sizes*/
+  --seccionprincipal-images:430px;
+  --footer-imagesize:25px;
+  --conteiner-imagesize-height:400px;
+  --conteiner-imagesize-width:500px;
+  
+}
+
+/*Estilos Globales*/
+
+*::after,
+*::before,
+
+*{
+/* Aqui receteamos margenes de la pagina que vienen por defecto*/
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+
+
 @media screen and (min-width: 1000px) {
 #nav__display{
   display: flex;
@@ -10,4 +72,56 @@
   font-size: 1.5em;
   
 }
+.card{
+  display: flex;
+  align-items: center;
+  
+}
+#seccion__img{
+  
+  max-width: var(--seccionprincipal-images);
+  max-height: var(--seccionprincipal-images);
+}
+
+/* HTML DE PRODUCTO */
+/* #carousel__img{
+  width: 20px;
+  height: 20px;
+
+} */
+#carousel-inner{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+
+
+/* #nav__display-producto{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+
+} */
+/* #carousel__id_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+#carousel__id{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#main__productos div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+
 }
