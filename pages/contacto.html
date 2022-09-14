@@ -3,139 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../styles/styles-mobile-first -v2.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="../styles/style.css">
+    <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <title>HomeMedic</title>
 </head>
 
-<body class="grilla__contacto">
+<!-- Coloco el container-fluid como clase en 
+  el body, si no se quiere aplicar en el body
+  puede aplicarse en un section debajo del body
+  y que ese section englobe al resto del codigo -->
 
-  <!-- <section class="grilla"> -->
+<body class="container-fluid">
 
-    <!-- Inicio Header -->
-    <header class="cabeceraDOS">
-        <picture class="header__logo">
-            <img class="header__img" src="../images/Logo_Medic.jpg" alt="Logo">
-        </picture>
-        <p class="header__title">HomeMedic</p>
-        <nav class="menu__nav">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Inicio</a>               <!--  sino utilizo para la direccion del archivo que esta en el mismo nivel que el index, el "./" , cuando lo suba a un servidor no lo va a tonar  -->
+  <!-- INICIO FILA CON LA CLASE row -->
+
+  <!-- CABECERA -->
+
+
+  <section class="row">
+    <!-- INICIO COLUMNA CON LA CLASE col -->
+    <section class="col-12">
+      <!-- HEADER -->
+      <header class="text-bg-white p-3 text-center">
+        <img src="../images/Logo_Medic.jpg" alt="Logo">
+        <h1>HomeMedic</h1>
+      </header>
+      <!-- FIN HEADER -->
+    </section>
+    <!-- FIN COLUMNA -->
+  </section>
+  <!-- FIN DE FILA -->
+
+  <!-- INICIO DE FILA boton nav-->
+  
+  <section class="row">
+    <!-- INICIO DE COLUMNA -->
+    <section class="col">
+      <!-- INICIO DE NAV -->
+      <nav class="navbar navbar-dark bg-dark ">
+
+        <section class="col-1 navbar navbar-expand-bg navbar-dark bg-dark p-4">
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <article class="nav-link text-center">
+                        <img src="../images/logueo.jpg" width="55px" height="55px" >
+                        <p>Iniciar Sesión</p>
+                    </article>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/servicios.html">Servicios</a>
+                <li class="nav-item">
+                    <article class="nav-link text-center">
+                        <img src="../images/registro.jpg" width="55px" height="55px">
+                        <p>Registrarse</p>
+                    </article>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/Productos.html">Productos</a>
+                <li class="nav-item">
+                    <article class="nav-link text-center">
+                        <img src="../images/atencion_urgencia.jpg" width="55px" height="55px" >
+                        <p>Urgencia Medica</p>
+                    </article>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="../pages/contacto.html">Contacto</a>
+                <li class="nav-item">
+                    <article class="nav-link text-center">
+                        <img src="../images/medico_virtual.jpg" width="55px" height="55px" >
+                        <p>Turno antencion medica</p>
+                    </article>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="../pages/FAQ.html">FAQ</a>
+                <li class="nav-item">
+                    <article class="nav-link text-center">
+                        <img src="../images/hospital_encasa.jpg" width="55px" height="55px" >
+                        <p>Asistencia en casa</p>
+                    </article>
                 </li>
-            </ul>
-        </nav>
-
-
-
-    </header>
-    <!-- Fin Header -->
-	<!-- cierre de fila logo + nav -->
-	<!-- fila de información de mi sitio -->
-	
-    <div class="seccion__contacto">
-        <div>
-            
-            <div class="ubicacion">
-                <h1>Ubicanos</h1>
-                <iframe src="https://goo.gl/maps/BVEQrZ3Z13RuHTSc8" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
-
             </div>
-        </div>	
-		<div>
-            
-            <!-- formulario de contacto -->
-            <form class="seccion__contacto__formulario">
-                <h1>Escribinos</h1>
-                
-                <legend>Datos Personales</legend>
-                <label for="nombre"> Ingresa tu nombre</label>
-                <input id="nombre" type="text" >
-                <label for="apellido"> Ingresa tu apellido</label>
-                <input id="apellido" type="text">
-                <label for="documento">Ingresa tu DNI</label>
-                <input id="documento" type="number">
-                <label for="edad">Ingresa tu edad</label>
-                <input id="edad" type="number">
-                <label for="email">Ingresa tu email</label>
-                <input id="email" type="email">
-                <label for="pais">Selecciona tu provincia</label>
-            <select>
-                    <option>Buenos Aires</option>
-                    <option>Cordoba</option>
-                    <option>Mendoza</option>
-                    <option>Chubut</option>
-                    <option>Santa Cruz</option>
-                    <option>Rio Negro</option>
-                    <option>Santa Fe</option>
-            </select>
-                    <label> ¿Como prefiere que lo contactemos?</label>
-                    <label for="">email</label>
-                    <input name="radio" type="radio">
-                    <label for="">llamada telefonica</label>
-                    <input name="radio" type="radio">
-                    <label for="">whatsapp</label>
-                    <input name="radio" type="radio">
-                    <label> Acepto los terminos y condiciones</label>
-                    <input type="checkbox">
-                    <label> Deseo recibir informacion por email</label>
-                    <input type="checkbox">
-                    <label for="consulta">Ingresa tus consulta</label>
-                    <textarea></textarea>
-            
-                <legend>Enviar Datos</legend>
-                <div>
-                    <input type="submit" value="aceptar">
-                    <input type="reset" value="cancelar">
-                    <input type="button" value="Mas info">
-                </div>
-            </form>
+
+        </section>
+
+        <section class="col-5" >
+          <ul class="navbar-nav  mb-3 mb-lg-0" id="nav__display_contacto">
+            <li class="nav-item">
+              <a class="nav-link " href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./FAQ.html">FAQ</a>
+            </li>
+          </ul>
+          
+        </section>
+      </nav>
+      <!-- FIN DE NAV -->
+    </section>
+    <!-- FIN DE COLUMNA -->
+  </section>
+
+
+
+  <section class="row justify-content-center p-4">
+    <section class="col-lg-4 text-center">
+      <h2>Escribinos tu consulta</h2>
+      <!-- Inicio formulario de consulta -->
+      <form class="bg-light p-3">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><strong>Nombre</strong></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-    </div>
-	
-<!-- cierre de form contacto -->
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><strong>Apellido</strong></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><strong>Email</strong></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie mas</div>
+        </div>
+        
+        <div class="mb-3">
+          <label for="validationServer04" class="form-label"><strong>Provincia</strong></label>
+          <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+          <option selected="" disabled="" value="">Elige una..</option>
+          <option>Buenos Aires</option>
+          <option>Cordoba</option>
+          <option>Chubut</option>
+          <option>Neuquen</option>
+          </select>
+          
+        </div>
+        <div class="mb-3">
+          <label for="validationServer03" class="form-label"><strong>Ciudad</strong></label>
+          <input type="text" class="form-control " id="validationServer03" aria-describedby="validationServer03Feedback" >
+          
+        </div>
 
- <!-- inicio de footer --> 
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label"><strong>Su consulta</strong></label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+          <div class="invalid-feedback">
+              Por favor escriba su consulta.
+          </div>
+        </div>
 
-  <!-- Comienzo footer -->
+        <div class="mb-3">
+          <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required="">
+          <label class="form-check-label" for="invalidCheck3">
+              Estoy de acuerdo con los terminos y condiciones
+          </label>
+          <div id="invalidCheck3Feedback" class="invalid-feedback">
+              Debes estar de acuerdo para poder enviar tu consulta.
+          </div>
+          </div>
+        </div>
 
-  <footer class="footer">
+        <button type="submit" class="btn btn-primary">Enviar consulta</button>
+      </form>
       
-    <div  class="footer__img">
-      <img src="./images/Logo_Medic.jpg" alt="">
-      <h3>HomeMedic</h3>
-      <h3>Contacto</h3>
 
-      <p> Av. Roca 897, Puerto Madryn, Chubut, Argentina.</p>
+  </section>
+  <!-- Fin formulario de consulta -->
+  
+	<!-- ubucacion de mi sitio -->
+  <section class="row text-center justify-content-center">
+      <section class="col-lg-8 text-center justify-content-center"> 	
+          
+              <div class="row p-4 justify-content-center">
+                  
+                  <div class="ubicacion">
+                      <h2>Ubicanos</h2>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1464.446009286562!2d-65.0333669!3d-42.7694889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe024a9ebfa6d48f%3A0xce757a7d2afda41a!2sAv.%20Julio%20Argentino%20Roca%20585%2C%20U9120%20Puerto%20Madryn%2C%20Chubut!5e0!3m2!1ses!2sar!4v1663162478810!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-      <a href="consultas@homedic.com" class="footer__email">Envienos un email</a>
+                  </div>
+              </div>	
+                  
+      
+      </section>
+  </section>
+  
+<!-- Comienzo footer -->
 
-    </div>
+<footer class="row p-3">
+    <section class="text-bg-dark p-3">
+  
+        <div class="text-center" >
+        <img src="./images/Logo_Medic.jpg" alt="">
+        <h3>HomeMedic</h3>
+        <h3>Contacto</h3>
 
+        <p> Av. Roca 897, Puerto Madryn, Chubut, Argentina.</p>
 
-    <div class="footer__div1-a">
-      <!-- <h3>Contacto</h3> -->
-      <!-- <p> Av. Roca 897, Puerto Madryn, Chubut, Argentina.</p> -->
-      <!-- <a href="consultas@homedic.com" class="footer__email">Envienos un email</a> -->
-    </div>
+        <a class="text-white" href="consultas@homedic.com" >Envienos un email</a>
 
-    <div class="footer__derechos"> 2022. Home Medical Care. All rights reserved.</div>
- 
+        </div>
+    </section>
+
+    <div class="text-center"> 2022. Home Medical Care. All rights reserved.</div>
+  
  
 </footer>
 
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 </html>
