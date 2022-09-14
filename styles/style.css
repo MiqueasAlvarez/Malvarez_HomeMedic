@@ -36,6 +36,7 @@
   --spacing-carousel-heigth:35rem;
   --spacing-carouselimages-width:40rem;
   --spacing-carouselimages-heigth:25rem;
+  --spacing-heigthFAQ:40rem;
 
 
   /* Font-family */
@@ -68,7 +69,7 @@
 /* Aqui receteamos margenes de la pagina que vienen por defecto*/
 margin: 0px;
 padding: 0px;
-box-sizing: border-box;
+/* box-sizing: border-box; */
 }
 
 /* .seccion__contacto div{
@@ -104,16 +105,7 @@ box-sizing: border-box;
 }
 
 /* HTML DE PRODUCTO */
-/* #carousel__img{
-  width: 20px;
-  height: 20px;
 
-} */
-/* #carousel-inner{
-  display: flex;
-  flex-direction: column;
-  
-} */
 .carousel__item{
   display: flex;
   flex-direction: column;
@@ -130,8 +122,6 @@ box-sizing: border-box;
 
 }
 
-
-
 #nav__display_producto{
   display: flex;
   flex-direction:row;
@@ -139,25 +129,7 @@ box-sizing: border-box;
   font-size: 1.5em;
 
 }
-/* #carousel__id_main{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 
-}
-#carousel__id{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#main__productos div{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-} */
 
 /* HTML DE CONTACTO */
 #nav__display_contacto{
@@ -175,8 +147,16 @@ box-sizing: border-box;
   height: var(--spacing-videoservicios-heigth);
 }
 
+/*HTML FAQ*/
 
-
+.FAQclass{
+  min-height: var(--spacing-heigthFAQ);
+  background-image: url(../images/fondo_principal.jpg);
+}
+.FAQclass__header{
+  margin: 0px;
+  padding: 0px;
+}
 
 
 
