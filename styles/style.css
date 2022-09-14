@@ -35,7 +35,7 @@
   --spacing-carousel-width:45rem;
   --spacing-carousel-heigth:35rem;
   --spacing-carouselimages-width:40rem;
-  --spacing-carouselimages-heigth:30rem;
+  --spacing-carouselimages-heigth:25rem;
 
 
   /* Font-family */
@@ -124,8 +124,8 @@ box-sizing: border-box;
   
 }
 .carousel__img{
-  height: 500px;
-  width: 600px;
+  max-height: var(--spacing-carouselimages-heigth);
+  width: auto;
   
 
 }
