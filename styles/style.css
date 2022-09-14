@@ -151,7 +151,7 @@ padding: 0px;
 
 .FAQclass{
   min-height: var(--spacing-heigthFAQ);
-  background-image: url(../images/fondo_principal.jpg);
+  /* background-image: url(../images/fondo_principal.jpg); */
 }
 .FAQclass__header{
   margin: 0px;
