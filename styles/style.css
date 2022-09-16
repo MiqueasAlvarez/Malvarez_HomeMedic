@@ -9,6 +9,7 @@
   --secondary: #FF5376;
   --alternative: #302F4D;
   --text-color: #2B2B2B;
+  --text-carouselcolor:#61c4f9;
   --text-navcolor:#0241b8;
   --cabecera-backgroundcolor:#0241b8;
   --cabecera-mobile-backgroundcolor:#0241b8;
@@ -32,7 +33,7 @@
   --spacing-videoservicios-heigthsmall:30rem;
   --spacing-videoservicios-width:60rem;
   --spacing-videoservicios-heigth:50rem;
-  --spacing-carousel-width:45rem;
+  --spacing-carousel-width:50rem;
   --spacing-carousel-heigth:35rem;
   --spacing-carouselimages-width:40rem;
   --spacing-carouselimages-heigth:25rem;
@@ -65,27 +66,65 @@
 *::after,
 *::before,
 
-*{
-/* Aqui receteamos margenes de la pagina que vienen por defecto*/
-margin: 0px;
-padding: 0px;
-/* box-sizing: border-box; */
+
+.header__img{
+  border-radius: 10%;
+  width: 90px;                                    /*Con este maximo de pixel piso lo que puse anteriormente del 100% */
+  animation-name:animacion__header__img;
+
+  animation-duration: 20s;
+  animation-iteration-count: 2;
 }
 
-/* .seccion__contacto div{
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-} */
+@keyframes animacion__header__img {
+  0%{
+  }
+  15%{
+    transform: translateX(-400px);
+
+  }
+  30%{
+    transform: translateX(400px);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  75%{
+    border-radius: 100%;
+  }
+  100%{
+
+  }
+}
+
+
+
+/*HTML INDEX*/
+.card{
+  border: none;
+}
+
+/*FIN HTML INDEX*/
+
+/*HTML PRODUCTOS*/
+
+.carousel__text{
+  color:var(--text-carouselcolor);
+  font-size: var(--text-base);
+  
+} 
+/*FIN HTML PRODUCTOS*/
+
+/*HTML SERVICIOS*/
 
 #video__servicios iframe{
   width: var(--spacing-videoservicios-widthsmall);
   height: var(--spacing-videoservicios-heigthsmall);
 }
 
+/*FIN HTML SERVICIOS*/
 
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
 #nav__display{
   display: flex;
   flex-direction: row;
@@ -93,24 +132,43 @@ padding: 0px;
   font-size: 1.5em;
   
 }
+
+/*HTML INDEX*/
+
 .card{
   display: flex;
   align-items: center;
-  
+  border: none;
 }
 #seccion__img{
-  
+
   max-width: var(--seccionprincipal-images);
   max-height: var(--seccionprincipal-images);
+  transition: all 2s;
 }
+
+#seccion__img:hover{
+    filter: sepia(80%);
+
+}
+
+/*HTML de Navs*/
+/* .nav__ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 30px;
+}
+.nav__button{
+  padding-bottom: 40px;
+} */
+
 
 /* HTML DE PRODUCTO */
 
+/* 
 .carousel__item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ 
   height: var(--spacing-carousel-heigth);
   width: var(--spacing-carousel-width);
   
@@ -120,15 +178,15 @@ padding: 0px;
   width: auto;
   
 
-}
+} */
 
-#nav__display_producto{
+/* #nav__display_producto{
   display: flex;
   flex-direction:row;
   justify-content: space-evenly;
   font-size: 1.5em;
 
-}
+} */
 
 
 /* HTML DE CONTACTO */
