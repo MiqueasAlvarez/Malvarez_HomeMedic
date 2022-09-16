@@ -3,20 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap'); /*fuentes de google*/
 
 
+
+/*CONFIGURACION DE VARIABLES GLOBALES*/
+
 :root {
   /* Colors */
   --primary: #120D31;
   --secondary: #FF5376;
   --alternative: #302F4D;
   --text-color: #2B2B2B;
-  --text-carouselcolor:#61c4f9;
+  --text-carouselcolor:#f89b0f;
   --text-navcolor:#0241b8;
-  --cabecera-backgroundcolor:#0241b8;
+  --cabecera-backgroundcolor:#c1f1fb;
   --cabecera-mobile-backgroundcolor:#0241b8;
   --cabecera-mobile-nav-backgroundcolor:#76777a;
   --footer-mobile-backgroundcolor:#c8c4c4;
   --nav-backgroundcolor:#ffffff;
-  --nav-mobile-backgroundcolor:#c8c4c4;
+  --nav-mobile-backgroundcolor:#85c6f4;
   --footer-backgroundcolor:#f4f1f1;
   --footer-topbordercolor:#ffffff;
 
@@ -61,17 +64,17 @@
   
 }
 
-/*Estilos Globales*/
+/* FIN CONFIGURACION DE VARIABLES GLOBALES*/
 
-*::after,
-*::before,
 
+/*ESTILOS Y CLASES GLOBALES*/
+
+  /*ESTILO DE HEADER Y BARRA DE NAVEGACION*/
 
 .header__img{
   border-radius: 10%;
-  width: 90px;                                    /*Con este maximo de pixel piso lo que puse anteriormente del 100% */
+  width: 90px;                                   
   animation-name:animacion__header__img;
-
   animation-duration: 20s;
   animation-iteration-count: 2;
 }
@@ -81,39 +84,45 @@
   }
   15%{
     transform: translateX(-400px);
-
   }
-  30%{
+  35%{
     transform: translateX(400px);
   }
-  50%{
+  55%{
     transform: rotate(360deg);
   }
-  75%{
+  80%{
     border-radius: 100%;
   }
   100%{
-
   }
 }
 
+  /*FIN ESTILO DE HEADER Y BARRA DE NAVEGACION*/
 
 
-/*HTML INDEX*/
+/*FIN ESTILOS Y CLASES GLOBALES*/
+.cabecera__backgroundcolor{
+  background-color:var(--cabecera-backgroundcolor) ;
+}
+
+
+/*ESTILOS HTML INDEX*/
+
 .card{
   border: none;
 }
 
-/*FIN HTML INDEX*/
+/*FIN ESTILOS HTML INDEX*/
 
-/*HTML PRODUCTOS*/
+/* ESTILOS HTML PRODUCTOS*/
 
 .carousel__text{
   color:var(--text-carouselcolor);
   font-size: var(--text-base);
   
 } 
-/*FIN HTML PRODUCTOS*/
+/*FIN ESTILOS HTML PRODUCTOS*/
 
 /*HTML SERVICIOS*/
 
@@ -124,7 +133,22 @@
 
 /*FIN HTML SERVICIOS*/
 
+
+/*ESTILO HTML FAQ*/
+
+.FAQclass{
+  min-height: var(--spacing-heigthFAQ);
+  background-image: url(../images/fondo_principal.jpg);
+}
+
+/*FIN ESTILO HTML FAQ*/
+
+
+/*******************INICIO ESTILO PANTALLA ESCRITORIO********************/
+
+
 @media screen and (min-width: 1100px) {
+
 #nav__display{
   display: flex;
   flex-direction: row;
@@ -152,44 +176,7 @@
 
 }
 
-/*HTML de Navs*/
-/* .nav__ul{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 30px;
-}
-.nav__button{
-  padding-bottom: 40px;
-} */
-
-
-/* HTML DE PRODUCTO */
-
-/* 
-.carousel__item{
- 
-  height: var(--spacing-carousel-heigth);
-  width: var(--spacing-carousel-width);
-  
-}
-.carousel__img{
-  max-height: var(--spacing-carouselimages-heigth);
-  width: auto;
-  
-
-} */
-
-/* #nav__display_producto{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-evenly;
-  font-size: 1.5em;
-
-} */
-
-
-/* HTML DE CONTACTO */
+/* ESTILO HTML CONTACTO */
 #nav__display_contacto{
   display: flex;
   flex-direction: row;
@@ -197,25 +184,47 @@
   font-size: 1.5em;
 
 }
+.background__contacto{
+  background-image: url(../images/image1.jpg);
+  
+}
+/* FIN ESTILO HTML CONTACTO */
 
-
-/*HTML SERVICIOS*/
+/*ESTILO HTML SERVICIOS*/
 #video__servicios iframe{
   width: var(--spacing-videoservicios-width);
   height: var(--spacing-videoservicios-heigth);
 }
+.background__servicios{
+  background-image: url(../images/image7.jpg);
+}
 
-/*HTML FAQ*/
+/*FIN ESTILO HTML SERVICIOS*/
+
+/*ESTILO HTML FAQ*/
 
 .FAQclass{
   min-height: var(--spacing-heigthFAQ);
-  /* background-image: url(../images/fondo_principal.jpg); */
-}
-.FAQclass__header{
-  margin: 0px;
-  padding: 0px;
+  
 }
 
+/*FIN ESTILO HTML FAQ*/
+
+
+/*ESTILO HTML PRODUCTOS*/
+
+.background__productos{
+  background-image: url(../images/background_productos.jpg);
+  min-height: 80vh;
+}
+
+.background__carousel{
+  max-height: 60vh;
+  max-width: 100vh;
+
+}
+
+/*FIN ESTILO HTML PRODUCTOS*/
 
 
 }
