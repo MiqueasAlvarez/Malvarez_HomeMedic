@@ -1,0 +1,16 @@
+
+/* ESTILOS HTML PRODUCTOS*/
+
+.carousel__text{
+    color:$--text-carouselcolor;
+    font-size: $--text-base;
+  } 
+
+  @media screen and (min-width: 1100px) {
+    
+   .background__productos{
+    min-height: 60vh;
+  }
+}
+
+/*FIN PRODUCTOS*/

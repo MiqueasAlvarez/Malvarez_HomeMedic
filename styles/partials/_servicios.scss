@@ -1,0 +1,21 @@
+
+/*HTML SERVICIOS*/
+
+#video__servicios iframe{
+    width: $--spacing-videoservicios-widthsmall;
+    height: $--spacing-videoservicios-heigthsmall;
+  }
+  
+  /*FIN HTML SERVICIOS*/
+
+  @media screen and (min-width: 1100px) {
+  /* SERVICIOS*/
+  #video__servicios iframe{
+    width: $--spacing-videoservicios-width;
+    height: $--spacing-videoservicios-heigth;
+  }
+  
+  
+  /*FIN  SERVICIOS*/
+
+}

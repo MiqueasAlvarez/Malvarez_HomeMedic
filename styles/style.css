@@ -1,110 +1,49 @@
-
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap'); /*fuentes de google*/
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap"); /*fuentes de google*/
 /*CONFIGURACION DE VARIABLES GLOBALES*/
-
-:root {
-  /* Colors */
-  --primary: #120D31;
-  --secondary: #FF5376;
-  --alternative: #302F4D;
-  --text-color: #2B2B2B;
-  --text-carouselcolor:#f89b0f;
-  --text-navcolor:#0241b8;
-  --cabecera-backgroundcolor:#ffffff;
-  --cabecera-mobile-backgroundcolor:#0241b8;
-  --cabecera-mobile-nav-backgroundcolor:#76777a;
-  --footer-mobile-backgroundcolor:#c8c4c4;
-  --nav-backgroundcolor:#ffffff;
-  --nav-mobile-backgroundcolor:#ffffff;
-  --footer-backgroundcolor:#f4f1f1;
-  --footer-topbordercolor:#ffffff;
-  /* gradientes */
-  --gradient-primary: #2937f0;
-  --gradient-secondary: #9f1ae2;
-  --gradient-greyprimary: #59595c;
-  --gradient-greysecondary: #bfbbc1;
-  
-  /* Spacings */
-  --spacing-xlarge:12rem;
-  --spacing-xxlarge:50rem;
-  --spacing-large: 6rem;
-  --spacing-medium: 2.4rem;
-  --spacing-small: 2rem;
-  --spacing-xsmall: 1rem;
-  --spacing-xxsmall:0.2rem;
-  --spacing-videoservicios-widthsmall:40rem;
-  --spacing-videoservicios-heigthsmall:30rem;
-  --spacing-videoservicios-width:60rem;
-  --spacing-videoservicios-heigth:50rem;
-  --spacing-carousel-width:50rem;
-  --spacing-carousel-heigth:35rem;
-  --spacing-carouselimages-width:40rem;
-  --spacing-carouselimages-heigth:25rem;
-  --spacing-heigthFAQ:40rem;
-
-
-  /* Font-family */
-  --font-principal: 'Barlow', sans-serif;
-  --font-title: 'Roboto Slab', serif;
-
-  /* Font-Sizes */
-  --text-title:4em;
-  --text-large: 5.2em;
-  --text-medium: 2.2em;
-  --text-base: 1.6em;
-  --text-small: 1.4em;
-  --text-navtext:1.5em;
-  --footer-textsize:1.5em;
-
-  /*objets sizes*/
-  
-  --seccionprincipal-images:25rem;
-  --footer-imagesize:25px;
-  --conteiner-imagesize-height:400px;
-  --conteiner-imagesize-width:500px;
-  
-}
-
+/* Colors */
+/* gradientes */
+/* Spacings */
+/* Font-family */
+/* Font-Sizes */
+/*objets sizes*/
 /* FIN CONFIGURACION DE VARIABLES GLOBALES*/
-
-
-/*ESTILOS Y CLASES GLOBALES*/
-
-  /*ESTILO DE HEADER Y BARRA DE NAVEGACION*/
-
-.header__img{
+/*ESTILO DE HEADER Y BARRA DE NAVEGACION*/
+.header__img {
   padding-left: 23px;
   border-radius: 10%;
-  max-height: 3rem;                                   
-  animation-name:animacion__header__img;
-  animation-duration: 10s;
-  animation-iteration-count: 2;
+  max-height: 3rem;
+  -webkit-animation-name: animacion__header__img;
+          animation-name: animacion__header__img;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes animacion__header__img {
+  35% {
+    transform: rotate(360deg);
+  }
+  55% {
+    transform: translateX(-15px);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes animacion__header__img {
-  0%{
-  }
-  
-  35%{
+  35% {
     transform: rotate(360deg);
   }
-  55%{
+  55% {
     transform: translateX(-15px);
   }
-  80%{
-    
+  80% {
     transform: rotate(360deg);
   }
-  100%{
-  }
 }
-
-
-
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -117,7 +56,7 @@
   padding: 0.75rem 1rem;
   color: #212529;
 }
-.navbar-toggler-icon {
+.navbar-toggler .navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
@@ -127,252 +66,167 @@
   background-size: 100%;
 }
 
-
-
-.consulta__button{
+.consulta__button {
   border-radius: 10px;
-
 }
 
-
-  /*FIN ESTILO DE HEADER Y BARRA DE NAVEGACION*/
-
-.gradiente__violeta{
-  background-image: linear-gradient(to right,var(--gradient-primary),var(--gradient-secondary));
+@media screen and (min-width: 1100px) {
+  .header__img {
+    padding-left: 15rem;
+    border-radius: 10%;
+    max-height: 4rem;
+    -webkit-animation-name: animacion__header__img;
+            animation-name: animacion__header__img;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+  }
+  @-webkit-keyframes animacion__header__img {
+    35% {
+      transform: translateX(-170px);
+    }
+    55% {
+      transform: rotate(360deg);
+    }
+    80% {
+      transform: translateX(-170px);
+    }
+  }
+  @keyframes animacion__header__img {
+    35% {
+      transform: translateX(-170px);
+    }
+    55% {
+      transform: rotate(360deg);
+    }
+    80% {
+      transform: translateX(-170px);
+    }
+  }
+}
+/*FIN ESTILO DE HEADER Y BARRA DE NAVEGACION*/
+/*ESTILOS Y CLASES GLOBALES*/
+.gradiente__violeta {
+  background-image: linear-gradient(to right, #2937f0, #9f1ae2);
 }
 
-.gradiente__gris{
-  background-image: linear-gradient(to right,var(--gradient-greyprimary),var(--gradient-greysecondary));
+.gradiente__gris {
+  background-image: linear-gradient(to right, #59595c, #bfbbc1);
 }
 
-.cabecera__backgroundcolor{
-  background-color:var(--cabecera-backgroundcolor) ;
-}
-
-
-/* MAIN */
-
-.masthead {
-  
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
- 
-}
-/* FIN MAIN */
-
-/*FOOTER*/
-.footer__main{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.footer__decoration{
-  text-decoration: none;
-}
-.footer__appimage{
-  height: 3rem;
-}
-.footer__image{
-  max-height: 3rem;
-}
-
-.card{
-  border: none;
-  
-}
-
-
-/*FIN ESTILOS Y CLASES GLOBALES*/
-
-
-
-/*ESTILOS HTML INDEX*/
-
-.primer__barra__horizontal{
+.primer__barra__horizontal {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 9rem;
-
 }
-.barra__horizontal{
+
+.barra__horizontal {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-/* .body__videoservicios{
 
-  height: 40rem;
-} */
-
-.card__body{
-
+/*FIN ESTILOS Y CLASES GLOBALES*/
+/*INDEX*/
+.masthead {
+  padding-top: 9.5rem;
+  padding-bottom: 5rem;
+}
+.masthead .card__body {
   height: 35rem;
-  /* padding-top: 9.5rem;
-  padding-bottom: 5rem; */
+}
+.masthead .card__body .card {
+  border: none;
 }
 
-/*FIN ESTILOS HTML INDEX*/
-
-/* ESTILOS HTML PRODUCTOS*/
-
-.carousel__text{
-  color:var(--text-carouselcolor);
-  font-size: var(--text-base);
-  
-} 
-
-
-.carousel__main{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+@media screen and (min-width: 1100px) {
+  .card__body {
+    height: 35rem;
+  }
+  .card__body .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+  }
+  .card__body .card #seccion__img {
+    max-width: 25rem;
+    max-height: 25rem;
+    transition: all 2s;
+  }
+  .card__body .card #seccion__img:hover {
+    filter: sepia(80%);
+  }
 }
-/*FIN ESTILOS HTML PRODUCTOS*/
+/*FIN  INDEX*/
+/*FOOTER*/
+.footer__main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.footer__main .footer__image {
+  max-height: 3rem;
+}
+.footer__main .footer__appimage {
+  height: 3rem;
+}
 
+.footer__decoration {
+  text-decoration: none;
+}
+
+/*FIN FOOTER*/
+/* ESTILO HTML CONTACTO */
+@media screen and (min-width: 1100px) {
+  .background__contacto {
+    background-image: url(../images/image1.jpg);
+  }
+}
+/* FIN ESTILO HTML CONTACTO */
 /*HTML SERVICIOS*/
-
-#video__servicios iframe{
-  width: var(--spacing-videoservicios-widthsmall);
-  height: var(--spacing-videoservicios-heigthsmall);
+#video__servicios iframe {
+  width: 40rem;
+  height: 30rem;
 }
 
 /*FIN HTML SERVICIOS*/
+@media screen and (min-width: 1100px) {
+  /* SERVICIOS*/
+  #video__servicios iframe {
+    width: 60rem;
+    height: 50rem;
+  }
+  /*FIN  SERVICIOS*/
+}
+/* ESTILOS HTML PRODUCTOS*/
+.carousel__text {
+  color: #f89b0f;
+  font-size: 1.6em;
+}
 
-
-/*ESTILO HTML FAQ*/
-
-.FAQclass{
-  min-height: var(--spacing-heigthFAQ);
+@media screen and (min-width: 1100px) {
+  .background__productos {
+    min-height: 60vh;
+  }
+}
+/*FIN PRODUCTOS*/
+/*FAQ*/
+.FAQclass {
+  min-height: 40rem;
   background-image: url(../images/fondo_principal.jpg);
 }
 
-/*FIN ESTILO HTML FAQ*/
-
-
-/*******************INICIO ESTILO PANTALLA ESCRITORIO********************/
-
-
 @media screen and (min-width: 1100px) {
-
-#nav__display{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 1.5em;
-  
-}
-
-.header__img{
-  padding-left: 15rem;
-  border-radius: 10%;
-  max-height: 4rem;                                   
-  animation-name:animacion__header__img;
-  animation-duration: 15s;
-  animation-iteration-count: 2;
-} 
-
-@keyframes animacion__header__img {
-  0%{
-  }
-  
-  35%{
-    transform: translateX(-170px);
-  }
-  55%{
-    transform: rotate(360deg);
-  }
-  80%{
-    
-    transform: translateX(-170px)
-  }
-  100%{
+  .FAQclass {
+    min-height: 40rem;
   }
 }
-
-/*HTML INDEX*/
-.card_section{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  border: none;
-  height: 55rem;
-
-}
-
-.card{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  border: none;
-  
-}
-
-
-#seccion__img{
-
-  max-width: var(--seccionprincipal-images);
-  max-height: var(--seccionprincipal-images);
-  transition: all 2s;
-}
-
-#seccion__img:hover{
-    filter: sepia(80%);
-
-}
-
-/* ESTILO HTML CONTACTO */
-#nav__display_contacto{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 1.5em;
-
-}
-.background__contacto{
-  background-image: url(../images/image1.jpg);
-  
-}
-/* FIN ESTILO HTML CONTACTO */
-
-/*ESTILO HTML SERVICIOS*/
-#video__servicios iframe{
-  width: var(--spacing-videoservicios-width);
-  height: var(--spacing-videoservicios-heigth);
-}
-
-
-/*FIN ESTILO HTML SERVICIOS*/
-
-/*ESTILO HTML FAQ*/
-
-.FAQclass{
-  min-height: var(--spacing-heigthFAQ);
-  
-}
-
-/*FIN ESTILO HTML FAQ*/
-
-
-/*ESTILO HTML PRODUCTOS*/
-
-.background__productos{
-  background-image: url(../images/background_productos.jpg);
-  min-height: 80vh;
-}
-
-.background__carousel{
-  max-height: 60vh;
-  max-width: 100vh;
-
-}
-
-/*FIN ESTILO HTML PRODUCTOS*/
-
-
-}
+/*FIN  FAQ*//*# sourceMappingURL=style.css.map */

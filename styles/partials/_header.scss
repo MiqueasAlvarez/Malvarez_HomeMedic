@@ -1,0 +1,93 @@
+
+ /*ESTILO DE HEADER Y BARRA DE NAVEGACION*/
+
+ .header__img{
+    padding-left: 23px;
+    border-radius: 10%;
+    max-height: 3rem;                                   
+    animation-name:animacion__header__img;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+  }
+  
+  @keyframes animacion__header__img {
+    0%{
+    }
+    
+    35%{
+      transform: rotate(360deg);
+    }
+    55%{
+      transform: translateX(-15px);
+    }
+    80%{
+      
+      transform: rotate(360deg);
+    }
+    100%{
+    }
+  }
+  
+
+  #mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    background-color: #fff;
+  }
+  
+    .navbar-toggler {
+      font-size: 0.875rem;
+      padding: 0.75rem 1rem;
+      color: #212529;
+
+      .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+      }
+
+
+    }
+    
+      .consulta__button{
+        border-radius: 10px;
+      
+      }
+ 
+    @media screen and (min-width: 1100px) {
+      
+      .header__img{
+        padding-left: 15rem;
+        border-radius: 10%;
+        max-height: 4rem;                                   
+        animation-name:animacion__header__img;
+        animation-duration: 15s;
+        animation-iteration-count: 2;
+      } 
+      
+      @keyframes animacion__header__img {
+        0%{
+        }
+        
+        35%{
+          transform: translateX(-170px);
+        }
+        55%{
+          transform: rotate(360deg);
+        }
+        80%{
+          
+          transform: translateX(-170px)
+        }
+        100%{
+        }
+      }    
+
+      }
+  
+      /*FIN ESTILO DE HEADER Y BARRA DE NAVEGACION*/
