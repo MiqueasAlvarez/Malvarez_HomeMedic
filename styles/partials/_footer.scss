@@ -16,6 +16,16 @@
 .footer__decoration{
   text-decoration: none;
 }
+.footer__redessociales{
+  
+  color: $--footer-redessocialescolor;
+  margin-bottom:1.5rem;
+  svg{
+    height: 2rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+}
 
   
 

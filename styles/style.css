@@ -141,8 +141,15 @@
 .masthead .card__body {
   height: 35rem;
 }
-.masthead .card__body .card {
-  border: none;
+.masthead .card__body .card a {
+  border-radius: 10px;
+  max-width: 10px;
+  background-color: red;
+}
+.masthead .card__body .card .card__button {
+  background-color: red;
+  border-radius: 10px;
+  max-width: 10px;
 }
 
 @media screen and (min-width: 1100px) {
@@ -181,6 +188,16 @@
 
 .footer__decoration {
   text-decoration: none;
+}
+
+.footer__redessociales {
+  color: #9f1ae2;
+  margin-bottom: 1.5rem;
+}
+.footer__redessociales svg {
+  height: 2rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 /*FIN FOOTER*/

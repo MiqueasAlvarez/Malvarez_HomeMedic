@@ -41,7 +41,18 @@
       height: 35rem;
 
       .card{
-        border: none;
+        // border: none;
+        a{
+          border-radius: 10px;
+          max-width: 10px;
+          background-color: red;
+
+        }
+        .card__button{
+          background-color: red;
+          border-radius: 10px;
+          max-width: 10px;
+        }
       }
 
     }
@@ -61,6 +72,7 @@
         justify-content: center;
         border-radius: 10px;
         border: none;
+       
 
         #seccion__img{
     
@@ -71,6 +83,7 @@
             filter: sepia(80%);
            }
         }
+        
         
         
       }
