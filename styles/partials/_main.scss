@@ -3,11 +3,11 @@
 
 
   .gradiente__violeta{
-      background-image: linear-gradient(to right,$--gradient-primary,$--gradient-secondary);
+      background-image: linear-gradient(to right,map-get($gradientes,gradient-primary),map-get($gradientes,gradient-secondary));
     }
     
   .gradiente__gris{
-    background-image: linear-gradient(to right,$--gradient-greyprimary,$--gradient-greysecondary);
+    background-image: linear-gradient(to right,map-get($gradientes,gradient-greyprimary),map-get($gradientes,gradient-greysecondary));
   }
 
   .primer__barra__horizontal{
@@ -41,18 +41,18 @@
       height: 35rem;
 
       .card{
-        // border: none;
+        border: none;
         a{
           border-radius: 10px;
           max-width: 10px;
           background-color: red;
 
         }
-        .card__button{
-          background-color: red;
-          border-radius: 10px;
-          max-width: 10px;
-        }
+        // .card__button{
+        //   background-color: red;
+        //   border-radius: 10px;
+        //   max-width: 10px;
+        // }
       }
 
     }
@@ -66,12 +66,14 @@
       height: 35rem;
 
       .card{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        border: none;
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+        // justify-content: center;
+        // border-radius: 10px;
+        // border: none;
+        @include tarjetaBody($backRadius:20px);
+
        
 
         #seccion__img{
@@ -80,7 +82,7 @@
           max-height: $--seccionprincipal-images;
           transition: all 2s;
           &:hover{
-            filter: sepia(80%);
+            filter: sepia(90%);
            }
         }
         

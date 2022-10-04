@@ -1,0 +1,46 @@
+ 
+ 
+ /****** INDEX********************/
+
+ #En el archivo index.html sumé el SEO con las siguientes características:
+
+-Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Sitio de atención y monitoreo médico online. Homemedic brinda diversos modos de atención medica virtual y producto para monitoreo de la salud vía conexión remota."
+
+-Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "medicina, virtual, medico, atención, online, cuidados, salud, tecnología"
+
+-Encabezado: para el encabezado del h1 utilicé el texto “HomeMedic”
+
+-titulo: <title>Atención medicina online</title>
+
+/***************SERVICIOS********************/
+
+#En el archivo servicios.html sumé el SEO con las siguientes características:
+
+-Encabezado: para el encabezado del h1 utilicé el texto “HomeMedic”
+
+-titulo: <title>Atención medica online</title>
+
+
+/***************PRODUCTOS******************/
+#En el archivo productos.html sumé el SEO con las siguientes características:
+
+-Encabezado: para el encabezado del h1 utilicé el texto “HomeMedic”
+
+-título:  <title>Tecnologías de cuidado médico online</title>
+
+/*************CONTACTO*********************/
+
+#En el archivo contacto.html sumé el SEO con las siguientes características:
+
+-Encabezado: para el encabezado del h1 utilicé el texto “HomeMedic”
+
+-título: <title>conectate con homemedic</title>
+
+
+/*******************FAQ*******************/
+
+#En el archivo FAQ.html sumé el SEO con las siguientes características:
+
+-Encabezado: para el encabezado del h1 utilicé el texto “HomeMedic”
+
+-título: <title>preguntas frecuentes a HomeMedic</title>

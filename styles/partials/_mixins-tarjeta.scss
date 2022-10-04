@@ -1,0 +1,10 @@
+@mixin tarjetaBody($backRadius) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: $backRadius;
+    border: none;
+
+    
+}
