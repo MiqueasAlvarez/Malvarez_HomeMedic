@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap"); /*fuentes de google*/
 /*CONFIGURACION DE VARIABLES GLOBALES*/
 /* Colors */
-/* gradientes */
-/* Spacings */
 /* Font-family */
 /* Font-Sizes */
 /*objets sizes*/
@@ -160,7 +158,7 @@
 /*FIN ESTILOS Y CLASES GLOBALES*/
 /*INDEX*/
 .masthead {
-  padding-top: 9.5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
 }
 .masthead .card__body {
